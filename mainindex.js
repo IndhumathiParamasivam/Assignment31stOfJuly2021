@@ -10,7 +10,8 @@ let Students = [
 ];
 let mytable = "<table><th>Name</th><th>Gender</th>";
 Students.map((student) => mytable +="<tr><td>"+student.name+"</td><td>"+student.gender+"</td></tr>");
-mytable+="</table>";
+mytable+="</table>";console.log("List of students:");
+console.log(Students);
 document.getElementById("stdAllDetail").innerHTML = mytable;
 let femaleStudents = Students.filter( (student) =>student.gender.toLowerCase()==="female").map( (femalestudent) => femalestudent.name);
 console.log("List of female students:");
